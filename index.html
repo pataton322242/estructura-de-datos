@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Estructura de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Librería para que el código Python se vea con colores profesionales (Prism.js) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <!-- Menú Lateral -->
+        <aside class="sidebar">
+            <h2>Algoritmos</h2>
+            <ul>
+                <li><button onclick="mostrarAlgoritmo('bubble')">Bubble Sort</button></li>
+                <li><button onclick="mostrarAlgoritmo('insertion')">Insertion Sort</button></li>
+                <li><button onclick="mostrarAlgoritmo('merge')">Merge Sort</button></li>
+                <li><button onclick="mostrarAlgoritmo('hash')">Tablas Hash</button></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="content">
+            <h1 id="titulo-algoritmo">Selecciona un algoritmo</h1>
+            <p id="descripcion-algoritmo">Elige uno de los temas del menú de la izquierda para ver su análisis y código fuente en Python.</p>
+            
+            <div class="visualizador-box">
+                <h3>Simulación / Ejecución Visual</h3>
+                <div id="pantalla-ejecucion" class="terminal-mock">
+                    <!-- Aquí se simulará el resultado del script -->
+                    Esperando algoritmo...
+                </div>
+                <button id="btn-ejecutar" onclick="simularEjecucion()">Simular Ejecución en Consola</button>
+            </div>
+
+            <div class="code-box">
+                <h3>Código Fuente (Python)</h3>
+                <pre><code id="codigo-python" class="language-python"># El código aparecerá aquí...</code></pre>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts de soporte de diseño de código -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
