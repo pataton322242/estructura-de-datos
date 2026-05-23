@@ -1,51 +1,42 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Estructura de Datos</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Librería para que el código Python se vea con colores profesionales (Prism.js) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-</head>
-<body>
-
-    <div class="container">
-        <!-- Menú Lateral -->
+<!-- Menú Lateral Completo: 23 Trabajos Integrados -->
         <aside class="sidebar">
-            <h2>Algoritmos</h2>
+            <h2>Mis Trabajos</h2>
             <ul>
-                <li><button onclick="mostrarAlgoritmo('bubble')">Bubble Sort</button></li>
-                <li><button onclick="mostrarAlgoritmo('insertion')">Insertion Sort</button></li>
-                <li><button onclick="mostrarAlgoritmo('merge')">Merge Sort</button></li>
-                <li><button onclick="mostrarAlgoritmo('hash')">Tablas Hash</button></li>
+                <!-- Fundamentos y Arreglos Estáticos -->
+                <li><button onclick="mostrarAlgoritmo('promedio_alumnos')">Clasificación de Calificaciones</button></li>
+                <li><button onclick="mostrarAlgoritmo('conteo_ascii')">Conteo de Letras (ASCII)</button></li>
+                <li><button onclick="mostrarAlgoritmo('conteo_count')">Conteo de Letras (.count)</button></li>
+                <li><button onclick="mostrarAlgoritmo('eliminar_duplicados')">Eliminar Duplicados (.pop)</button></li>
+                <li><button onclick="mostrarAlgoritmo('toneladas_cereal')">Análisis de Cereal Anual</button></li>
+                
+                <!-- Matrices y Búsqueda -->
+                <li><button onclick="mostrarAlgoritmo('matriz_reservas')">Matriz de Reservaciones 6x6</button></li>
+                <li><button onclick="mostrarAlgoritmo('multiplicacion_matrices')">Multiplicación de Matrices 3x3</button></li>
+                <li><button onclick="mostrarAlgoritmo('busqueda_coordenadas')">Búsqueda de Coordenadas</button></li>
+                
+                <!-- Librerías de Datos -->
+                <li><button onclick="mostrarAlgoritmo('analisis_vivienda')">Análisis Estadístico Pandas</button></li>
+                
+                <!-- Estructuras Lineales (Colas y Bicodas) -->
+                <li><button onclick="mostrarAlgoritmo('simulacion_bancaria')">Simulación Bancaria (Bicoda)</button></li>
+                <li><button onclick="mostrarAlgoritmo('cola_estandar')">Cola Estándar (Queue)</button></li>
+                <li><button onclick="mostrarAlgoritmo('bancario_optimizado')">Bancario (Collections Deque)</button></li>
+                <li><button onclick="mostrarAlgoritmo('bancario_listas_paralelas')">Bancario (Listas Paralelas)</button></li>
+                <li><button onclick="mostrarAlgoritmo('simulacion_tiempo_deque')">Simulación Temporal (10s)</button></li>
+                <li><button onclick="mostrarAlgoritmo('cola_circular')">Cola Circular (POO)</button></li>
+                <li><button onclick="mostrarAlgoritmo('planificador_tareas')">Planificador de Tareas (Bicoda)</button></li>
+                
+                <!-- Estructuras Jerárquicas (Árboles) -->
+                <li><button onclick="mostrarAlgoritmo('arbol_binario')">Árbol Binario de Búsqueda</button></li>
+                <li><button onclick="mostrarAlgoritmo('serializacion_arbol')">Serialización Árbol-JSON</button></li>
+                
+                <!-- Estructuras No Lineales (Grafos y Optimización) -->
+                <li><button onclick="mostrarAlgoritmo('recorrido_bfs')">Recorrido de Grafos (BFS)</button></li>
+                <li><button onclick="mostrarAlgoritmo('algoritmo_dijkstra')">Rutas Mínimas (Dijkstra)</button></li>
+                <li><button onclick="mostrarAlgoritmo('algoritmo_prim')">Árbol de Expansión Mínima (Prim)</button></li>
+                
+                <!-- Algoritmos Clásicos Avanzados -->
+                <li><button onclick="mostrarAlgoritmo('algoritmos_ordenamiento')">Compendio de Ordenamiento</button></li>
+                <li><button onclick="mostrarAlgoritmo('torres_hanoi')">Torres de Hanói (Recursivo)</button></li>
             </ul>
         </aside>
-
-        <!-- Contenido Principal -->
-        <main class="content">
-            <h1 id="titulo-algoritmo">Selecciona un algoritmo</h1>
-            <p id="descripcion-algoritmo">Elige uno de los temas del menú de la izquierda para ver su análisis y código fuente en Python.</p>
-            
-            <div class="visualizador-box">
-                <h3>Simulación / Ejecución Visual</h3>
-                <div id="pantalla-ejecucion" class="terminal-mock">
-                    <!-- Aquí se simulará el resultado del script -->
-                    Esperando algoritmo...
-                </div>
-                <button id="btn-ejecutar" onclick="simularEjecucion()">Simular Ejecución en Consola</button>
-            </div>
-
-            <div class="code-box">
-                <h3>Código Fuente (Python)</h3>
-                <pre><code id="codigo-python" class="language-python"># El código aparecerá aquí...</code></pre>
-            </div>
-        </main>
-    </div>
-
-    <!-- Scripts de soporte de diseño de código -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
