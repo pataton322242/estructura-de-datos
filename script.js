@@ -1135,25 +1135,21 @@ print("Aristas del MST:", resultado)`
     }
 };
 
-// --- Controladores de la interfaz web ---
 let algoritmoActual = null;
 
 function mostrarAlgoritmo(id) {
     algoritmoActual = proyectos[id];
     
-    // Cambiar textos informativos
     document.getElementById('titulo-algoritmo').innerText = algoritmoActual.titulo;
     document.getElementById('descripcion-algoritmo').innerText = algoritmoActual.descripcion;
     
-    // Inyectar código fuente
     const contenedorCodigo = document.getElementById('codigo-python');
     contenedorCodigo.textContent = algoritmoActual.codigo;
     
-    // Resetear terminal
     document.getElementById('pantalla-ejecucion').innerText = "Consola lista. Presiona 'Simular Ejecución'...";
     document.getElementById('pantalla-ejecucion').style.color = "#888888";
 
-    // Forzar el coloreado sintáctico de Prism.js
+   
     Prism.highlightElement(contenedorCodigo);
 }
 

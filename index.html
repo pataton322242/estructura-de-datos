@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Evidencias - Estructuras de Datos</title>
-    
-    <!-- Hojas de estilo externas para el diseño y el resaltado de código (Prism.js) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Estilos de respaldo integrados para asegurar que el menú se limpie correctamente -->
     <style>
         * {
             box-sizing: border-box;
@@ -51,7 +48,7 @@
             padding-bottom: 10px;
             color: #2c3e50;
         }
-        /* ESTILO CRUCIAL: Elimina los puntos negros de la lista definitivamente */
+        
         .menu-proyectos {
             list-style: none !important;
             padding: 0 !important;
@@ -152,7 +149,6 @@
 
     <main class="main-container">
         
-        <!-- BARRA LATERAL CON LOS 23 BOTONES SINCRONIZADOS -->
         <aside class="sidebar">
             <h2>Mis Trabajos</h2>
             <ul class="menu-proyectos">
@@ -182,22 +178,18 @@
             </ul>
         </aside>
 
-        <!-- PANEL DE VISUALIZACIÓN DERECHO -->
         <section class="content-viewer">
             <h1 id="titulo-algoritmo">Selecciona un Trabajo</h1>
             <p id="descripcion-algoritmo">Haz clic en cualquiera de los algoritmos del menú izquierdo para inspeccionar su código fuente y simular su salida en consola.</p>
             
-            <!-- Bloque de código con soporte de PrismJS para colorear la sintaxis -->
             <div class="code-box">
                 <pre><code id="codigo-python" class="language-python"># Aquí aparecerá tu código de Python seleccionado...</code></pre>
             </div>
 
-            <!-- Botón interactivo de ejecución -->
             <button class="btn-simular" onclick="simularEjecucion()">
                 Simular Ejecución
             </button>
 
-            <!-- Ventana simuladora de terminal -->
             <div class="terminal-box">
                 <pre id="pantalla-ejecucion">Consola lista. Esperando ejecución...</pre>
             </div>
@@ -205,11 +197,10 @@
 
     </main>
 
-    <!-- Scripts externos necesarios para el coloreado y procesamiento de PrismJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
     
-    <!-- Tu archivo de lógica de control -->
+  
     <script src="script.js"></script>
 </body>
 </html>

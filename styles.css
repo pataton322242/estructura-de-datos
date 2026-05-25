@@ -1,16 +1,14 @@
-/* Quita los puntos negros y márgenes raros de la lista */
+
 .sidebar ul.menu-proyectos {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-/* Separa los elementos para que no se encimen */
 .sidebar ul.menu-proyectos li {
     margin-bottom: 8px;
 }
 
-/* Hace que los botones abarquen todo el ancho y se vean profesionales */
 .sidebar ul.menu-proyectos button {
     width: 100%;
     padding: 10px 12px;
@@ -22,8 +20,6 @@
     font-size: 14px;
     transition: background 0.2s ease;
 }
-
-/* Efecto visual cuando pasas el mouse por encima */
 .sidebar ul.menu-proyectos button:hover {
     background-color: #e0e0e0;
 }
